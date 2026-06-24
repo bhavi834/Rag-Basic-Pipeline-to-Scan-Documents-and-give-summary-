@@ -1,1 +1,1 @@
-# Rag-Basic-Pipeline-to-Scan-Documents-and-give-summary-
+# Rag-Basic-Pipeline-for-Documents
