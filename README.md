@@ -12,7 +12,8 @@ Retrieve relevant document chunks
 Generate intelligent answers using Gemini 2.5 Flash
 Display document source and page number
 Easy to extend with Streamlit UI
-Project Architecture
+
+Project Architecture:-
 PDF Documents
       │
       ▼
@@ -31,7 +32,7 @@ all-MiniLM-L6-v2
       ▼
 FAISS Vector Store
       │
-──────────────────────────────
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 User Question
       │
