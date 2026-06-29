@@ -87,7 +87,7 @@ Step 1
 
 Clone the repository
 
-git clone https://github.com/bhavi834/Rag Basic Pipeline to Scan Documents and give summary.git
+git clone https://github.com/bhavi834/Rag-Basic-Pipeline-to-Scan-Documents-and-give-summary-.git
 
 cd pdf-rag
 
