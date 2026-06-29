@@ -14,6 +14,8 @@ A Retrieval-Augmented Generation (RAG) chatbot that answers questions from PDF d
 
 ## 🏗️ Architecture
 
+INDEXING PHASE
+
 PDF Documents
       -
       ->
@@ -27,22 +29,22 @@ Embeddings (MiniLM)
       -
       ->
 FAISS Vector Store
-      ->
 
+QUERY PROCESSING PHASE
 
 
 User Query
-      │
-      ▼
+      -
+      ->
 Similarity Search
-      │
-      ▼
+      -
+      ->
 Relevant Chunks
-      │
-      ▼
+      -
+      ->
 Gemini 2.5 Flash
-      │
-      ▼
+      -
+      ->
 Final Response
 
 ## 🛠️ Tech Stack
