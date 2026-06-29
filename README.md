@@ -69,24 +69,28 @@ pdf-rag/
 │             └── index.pkl
 │
 └── README.md
-Technologies Used
+
+Technologies Used:-
+
 Component	Technology
-Programming Language	Python 3.11+
-Framework	LangChain
-PDF Loader	PyPDFLoader
-Embedding Model	sentence-transformers/all-MiniLM-L6-v2
-Vector Database	FAISS
-LLM	Google Gemini 2.5 Flash
-Embedding Provider	HuggingFace
-UI (Optional)	Streamlit
+Python. 3.11+
+Framework:-LangChain
+PDF Loader:-PyPDFLoader
+Embedding Model:-sentence-transformers/all-MiniLM-L6-v2
+Vector Database:-FAISS
+LLM:-	Google Gemini 2.5 Flash
+Embedding Provider:-HuggingFace
+
+
 Installation
 Step 1
 
 Clone the repository
 
-git clone https://github.com/yourusername/pdf-rag.git
+git clone https://github.com/bhavi834/pdf-rag.git
 
 cd pdf-rag
+
 Step 2
 
 Create Virtual Environment
@@ -99,9 +103,6 @@ Activate
 
 venv\Scripts\activate
 
-Linux / Mac
-
-source venv/bin/activate
 Step 3
 
 Install Dependencies
@@ -132,34 +133,14 @@ Place all PDF files inside
 
 documents/
 
-Example
-
-documents/
-│
-├── ISO9001.pdf
-├── LabourCode.pdf
-├── EmployeeHandbook.pdf
-Creating the Vector Database
+Step 6
 
 Run
 
 python ingest.py
 
-This will
+This will Read all PDFs,Extract text,Split into chunks,Generate embeddings,Store vectors inside and create files
 
-Read all PDFs
-Extract text
-Split into chunks
-Generate embeddings
-Store vectors inside
-faiss_index/
-
-Files created
-
-index.faiss
-
-index.pkl
-Running the Chatbot
 
 Run
 
@@ -184,75 +165,10 @@ requirements.
 Source:
 ISO9001.pdf
 Page 12
-Running Streamlit UI
-
-If Streamlit UI is available
-
-streamlit run app.py
-
-Open
-
-http://localhost:8501
-Workflow
-1. Document Loading
-
-Reads PDF files using
-
-PyPDFLoader
-2. Chunking
-
-Documents are divided into
-
-Chunk Size = 1000
-
-Overlap = 200
-3. Embedding Generation
-
-Uses
-
-sentence-transformers/all-MiniLM-L6-v2
-
-Each chunk is converted into a numerical vector.
-
-4. Vector Storage
-
-Embeddings are stored inside
-
-FAISS
-
-for efficient semantic search.
-
-5. User Query
-
-The user's question is converted into an embedding using the same embedding model.
-
-6. Similarity Search
-
-FAISS retrieves the most relevant document chunks.
-
-7. Answer Generation
-
-Retrieved chunks are sent to
-
-Gemini 2.5 Flash
-
-which generates the final answer.
-
-Models Used
-Embedding Model
-sentence-transformers/all-MiniLM-L6-v2
 
 Purpose
 
-Generate document embeddings
-Generate question embeddings
-Semantic similarity search
-Large Language Model
-Gemini 2.5 Flash
-
-Purpose
-
-Understand retrieved context
+Understand the retrieved context
 Generate natural language answers
 Summarize information
 Answer user queries
@@ -275,11 +191,6 @@ What are the planning requirements?
 What risks are identified?
 
 Compare section 4 and section 5.
-
-Provide a short summary.
-
-What are the conclusions?
-
 
 Current version supports:
 
