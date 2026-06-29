@@ -15,20 +15,21 @@ A Retrieval-Augmented Generation (RAG) chatbot that answers questions from PDF d
 ## 🏗️ Architecture
 
 PDF Documents
-      │
-      >
+      -
+      ->
 Text Extraction
-      │
-      ▼
+      -
+      ->
 Chunking
-      │
-      ▼
+      -
+      ->
 Embeddings (MiniLM)
-      │
-      ▼
+      -
+      ->
 FAISS Vector Store
-      │
-────────────────────
+      ->
+
+
 
 User Query
       │
