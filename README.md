@@ -90,6 +90,7 @@ Clone the repository
 git clone https://github.com/bhavi834/Rag-Basic-Pipeline-to-Scan-Documents-and-give-summary-.git
 
 cd Rag-Basic-Pipeline-to-Scan-Documents-and-give-summary-
+
 Step 2
 
 Create Virtual Environment
